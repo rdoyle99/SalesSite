@@ -1,0 +1,37 @@
+
+
+.by-ryan {
+
+    display: block;
+    left: 0;
+    top: 0;
+    color: #000;
+    padding: .3em 1em;
+    border-bottom-right-radius: 8px;
+    border: 1px solid #ebebeb;\background: linear-gradient(to left,#f85032,#ff4742);
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    font-size: 14px;
+    opacity: .8;
+
+  }
+
+.pic {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    background-image: url(https://i.imgur.com/RhLOF5c.jpg);
+    background-size: cover;
+    margin-left: .5em;
+    margin-right: -.1em;
+    vertical-align: bottom;
+}
+
+#tweet:hover {
+  color: red;
+  opacity: 1;
+  transition: .5s;
+
+}

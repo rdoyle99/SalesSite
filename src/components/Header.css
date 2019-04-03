@@ -1,0 +1,55 @@
+
+.holder {
+  background-image: linear-gradient(to bottom right, #19D6E0, #FF3526);
+  margin: -1em -1em -1em
+}
+
+.top {
+  padding-top: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+  font-family: helvetica;
+  font-style: sans-serif;
+  font-style: italic;
+  font-size: 4em;
+  font-weight: bolder;
+  color: black;
+  line-height: .8;
+  letter-spacing: .01em;
+  word-spacing: .1em;
+  text-align: center;
+  text-shadow: 1.5px 1.5px #FFFFFF;
+}
+
+.bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+  font-family: helvetica;
+  font-style: sans-serif;
+  font-size: .8em;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 4.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 75% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
