@@ -1,5 +1,5 @@
 import React from "react"
-import './ListingDisplay.css'
+import './styles/ListingDisplay.css'
 import LoadingSpinner from './LoadingSpinner'
 
 //1.20.2019. this is a function that pulls in props of data to the App from jobsData

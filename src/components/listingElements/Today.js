@@ -1,5 +1,5 @@
 import React from "react"
-import "./SectionHeader.css"
+import "../styles/SectionHeader.css"
 
 
 const Today = () => (
