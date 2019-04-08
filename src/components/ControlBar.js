@@ -1,32 +1,50 @@
 import React from "react"
 import ListingsPage from "./ListingsPage"
 import Roadmap from "./Roadmap"
+import Heatlist from "./Heatlist"
 import "./styles/ControlBar.css"
 
 class ControlBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showComponent: false,
-      value: <ListingsPage/>
-    };
-    this._onButtonClick = this._onButtonClick.bind(this);
-  }
+    constructor() {
+        super();
+        this.state = {
+            buttonPressed: <ListingsPage />
 
-  _onButtonClick() {
-    this.setState({showComponent: true});
-  }
+        }
+    }
 
-  render() {
-    return (<div>
-      <button class="butty btn btn-outline-primary controller" onClick={this._onButtonClick}>Button</button>
-      {
-        this.state.showComponent
-          ? <Roadmap/>
-          : <ListingsPage/>
-      }
-    </div>);
-  }
+    handleClick = (button) => {
+        this.setState({ buttonPressed: button })
+    }
+
+    render() {
+        return(
+          <div>
+          <div class="controller">
+          <button
+               className='butty btn btn-outline-primary'
+               onClick={() => this.handleClick(<ListingsPage />)}
+           > Jobs 💼
+           </button>
+           <div class="divider"/>
+            <button
+                 className='butty btn btn-outline-primary'
+                 onClick={() => this.handleClick(<Roadmap />)}
+             > Roadmap 🗺
+             </button>
+             <div class="divider"/>
+             <button
+                  className='butty btn btn-outline-primary'
+                  onClick={() => this.handleClick(<Heatlist />)}
+              > Heatlist 🔥
+              </button>
+            </div>
+            {this.state.buttonPressed}
+            </div>
+        )
+    }
 }
+
+
 
 export default ControlBar
