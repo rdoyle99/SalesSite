@@ -22,22 +22,20 @@ class ControlBar extends React.Component {
           <div>
           <div class="controller">
           <button
-               className='butty btn btn-outline-primary'
+               id="but"
+               className='butty btn'
                onClick={() => this.handleClick(<ListingsPage />)}
            > Jobs 💼
            </button>
            <div class="divider"/>
             <button
-                 className='butty btn btn-outline-primary'
+                 id="but"
+                 className='butty btn'
                  onClick={() => this.handleClick(<Roadmap />)}
              > Roadmap 🗺
              </button>
              <div class="divider"/>
-             <button
-                  className='butty btn btn-outline-primary'
-                  onClick={() => this.handleClick(<Heatlist />)}
-              > Heatlist 🔥
-              </button>
+
             </div>
             {this.state.buttonPressed}
             </div>

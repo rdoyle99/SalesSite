@@ -1,16 +1,18 @@
-.left{
-text-align:left;
-float:left;
-width: 3vw;
+.left {
+  text-align: left;
+  float: left;
+  width: 3vw;
 }
-.right{
-float:right;
-text-align:right;
-width: 1vw;
+
+.right {
+  float: right;
+  text-align: right;
+  width: 1vw;
 }
-.centered{
-text-align:center;
-width: 3vw;
+
+.centered {
+  text-align: center;
+  width: 3vw;
 }
 
 .input {
@@ -18,7 +20,7 @@ width: 3vw;
   width: 35px;
   margin: 18px 10px 10px 10px;
   vertical-align: center;
-  position:sticky;
+  position: sticky;
   font-size: 10px
 }
 
@@ -29,31 +31,29 @@ width: 3vw;
   align-items: right;
 }
 
-
 .btnsizing {
-  color: white;
-  background-color: black;
+  font-style: "helvetica neue";
+  color: #FFFFF0;
+  background-color: #F56358;
   font-size: 12px;
   text-align: justify;
   margin: 20px 10px 10px 10px;
   font-weight: bold;
   line-height: 5px;
   border-style: double;
-  position:sticky;
+  position: sticky;
   bottom: 0;
 }
 
 .note {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
+  color: #FFFFF0;
+  font-family: 'Helvetica Neue', sans-serif;
   text-align: center;
   font-size: 12px;
   white-space: nowrap;
   line-height: 1.2;
-  position:sticky;
+  position: sticky;
   margin: 5px 2px 10px 2px;
   font-weight: bold;
   overflow-x: visible;
-
-
 }

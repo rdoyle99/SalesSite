@@ -1,7 +1,8 @@
 .controller {
   display: block;
   text-align: center;
-  height: 60px;
+  height: 45px;
+  background-color: #FFFFF0;
 }
 
 .butty {
@@ -9,12 +10,21 @@
   font-family: 'helvetica neue';
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
+  margin-top: 7px;
+  color: #218DA6;
+  border: 1px solid #218DA6;
 
 }
 
 .divider{
-    width:5px;
+    width:15px;
     height:auto;
     display:inline-block;
+}
+
+#but:hover {
+  background-color: #BAF2E8;
+  color: #F56358;
+  border-color: #F56358;
+  transition: .5s;
 }

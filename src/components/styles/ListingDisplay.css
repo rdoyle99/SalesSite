@@ -8,15 +8,20 @@
   line-height: 1
 }
 
+.job-list{
+  background-color: #FFFFF0;
+}
+
 .topper {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .item {
-  border-bottom: 1.1px solid gray;
+  border-bottom: 1.1px solid #F56358;
   margin-bottom: 10px;
-  max-height: 125px
+  max-height: 125px;
+  background-color: #FFFFF0;
 
 }
 
@@ -33,6 +38,7 @@
   font-family: 'helvetica neue', sans-serif;
   vertical-align: middle;
   display: block;
+  color: black;
 }
 
 .companyName {
@@ -40,27 +46,25 @@
   margin: 5px auto;
   line-height: 1;
   font-weight: 700;
-  color: black;
   font-size: .9em;
 }
 
 .jobTitle {
-  color: #0000b3;
   font-weight: normal;
   display: block;
-  color: black;
   font-size: .7em;
   width: 25vw
 }
 
 .jobLocation {
   max-width: 25ch;
+  font-family: "helvetica neue";
   text-transform: uppercase;
   font-style: italic;
   border-radius: 5px;
   font-size: .6em;
-  background: rgba(153, 153, 153, 0.1);
-  color: #999;
+  background: #FEB2AD;
+  color: black;
   letter-spacing: 1px;
   line-height: 1.6;
   display: block;
@@ -69,13 +73,15 @@
 
 .tagger {
   max-width: 65ch;
+  font-family: "helvetica neue";
   text-transform: uppercase;
   font-style: italic;
   border-radius: 5px;
   font-size: .6em;
-  background: rgba(153, 153, 153, 0.1);
-  color: #999;
+  background: #FEB2AD;
+  color: black;
   padding-right: 3px;
+  padding-left: 3px;
   letter-spacing: 1px;
   line-height: 1.6;
   display: block;
@@ -93,7 +99,7 @@
   text-align: right;
   font-family: 'helvetica neue';
   font-size: 12px;
-  color: black;
+  color: #218DA6;
 }
 
 #apply-appear {
@@ -103,9 +109,9 @@
   text-transform: uppercase;
   position: absolute;
   margin-left: 75%;
-  font-style: italic;
-  color: gray;
-  font-weight: 200;
+  margin-top: 3%;
+  color: #F56358;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 1px;
   font-family: 'helvetica neue';
@@ -114,6 +120,7 @@
 
 #some-div:hover #apply-appear {
   display: block;
+  transition: .8s;
 
 }
 
@@ -122,9 +129,10 @@
 }
 
 #hov:hover {
-  background-color: rgba(24, 201, 84, .15);
-  transition: .4s;
+  background-color: #BAF2E8;
+  transition: .8s;
   border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 /*

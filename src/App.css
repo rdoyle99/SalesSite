@@ -60,3 +60,7 @@ button:focus {
   display: flex;
   flex-direction: column;
 }
+
+.all {
+  background-color: #FFFFF0;
+}
