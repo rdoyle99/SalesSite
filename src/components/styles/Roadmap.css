@@ -1,0 +1,29 @@
+.toppings {
+  font-size: 15px;
+  display: block;
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 600;
+  color: #218DA6;
+  font-family: 'helvetica neue'
+}
+
+#top:hover {
+  color: black;
+  opacity: 1;
+  transition: .5s;
+
+}
+
+.listings {
+  font-family: 'helvetica neue';
+  background-color: #FFFFF0;
+}
+
+.todos {
+  font-family: 'helvetica neue';
+  background-color: #FFFFF0;
+}

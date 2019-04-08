@@ -3,9 +3,8 @@
   font-size: 2em;
   display: block;
   text-align: center;
-  font-family: helvetica;
+  font-family: "helvetica neue";
   font-style: sans-serif;
-  color: black;
-  background-image: linear-gradient(-90deg, lightblue, white);
-  border-radius: 15px;
+  color: #FFFFF0;
+  background-color: #F56358;
 }
