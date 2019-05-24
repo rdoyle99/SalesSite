@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/ListingDisplay.css';
 import LoadingSpinner from './LoadingSpinner';
 
-//1.20.2019. this is a function that pulls in props of data to the App from jobsData
+//1.20.2019. this is a function that pulls in props of posts to the App from jobsData
 //it presents them in a table. I'd like to add a header for when dates change
 
 class TodayDisplay extends React.Component {
@@ -11,7 +11,8 @@ class TodayDisplay extends React.Component {
     this.state = {
       loading: false,
       originalPosts: [],
-      posts: []
+      posts: [],
+      filter: ''
     };
   }
 
@@ -29,61 +30,84 @@ class TodayDisplay extends React.Component {
       );
   }
 
+  handleChange = e => {
+    this.setState(
+      {
+        filter: e.target.value,
+        posts: this.state.originalPosts.filter(
+          post => post.tag === e.target.value
+        )
+      },
+      () => console.log(this.state.filter)
+    );
+  };
+
   renderData() {
+    console.log(this.state);
     return (
-      <ul class='job-list'>
-        {this.state.data.map(function(row) {
-          return (
-            <div>
-              <li key={row.id} id='hov' class='item'>
-                <a
-                  href={row.url}
-                  target='_blank'
-                  title={row.title}
-                  id='some-div'
-                >
-                  <div class='topper'>
-                    <div>
-                      <img
-                        data-src={row.logo}
-                        alt='💰'
-                        class='lazyloaded company-picture'
-                        src={row.logo}
-                      />
-                    </div>
+      <div>
+        <div>
+          <span class='header'> Jobs Posted Today </span>
+          <select value={this.state.filter} onChange={this.handleChange}>
+            <option value='Sales Development'>SDR</option>
+            <option value='Account Executive'>AE</option>
+          </select>
+          <br />
+        </div>
+        <ul class='job-list'>
+          {this.state.posts.map(function(row) {
+            return (
+              <div>
+                <li key={row.id} id='hov' class='item'>
+                  <a
+                    href={row.url}
+                    target='_blank'
+                    title={row.title}
+                    id='some-div'
+                  >
+                    <div class='topper'>
+                      <div>
+                        <img
+                          posts-src={row.logo}
+                          alt='💰'
+                          class='lazyloaded company-picture'
+                          src={row.logo}
+                        />
+                      </div>
 
-                    <div class='company-n-title'>
-                      <span class='companyName'>{row.company}</span>
-                      <span class='jobTitle'>{row.title}</span>
-                    </div>
-                    <div>
-                      <span class='time'>{row.since}d</span>
-                    </div>
+                      <div class='company-n-title'>
+                        <span class='companyName'>{row.company}</span>
+                        <span class='jobTitle'>{row.title}</span>
+                      </div>
+                      <div>
+                        <span class='time'>{row.since}d</span>
+                      </div>
 
-                    <span id='apply-appear'>
-                      Click
-                      <br />
-                      to
-                      <br />
-                      Apply
-                    </span>
-                  </div>
-                  <div class='contain'>
-                    <span class='tagger'>{row.tag}</span>
-                    <span class='jobLocation'>{row.location}</span>
-                  </div>
-                  <div />
-                </a>
-              </li>
-            </div>
-          );
-        })}
-      </ul>
+                      <span id='apply-appear'>
+                        Click
+                        <br />
+                        to
+                        <br />
+                        Apply
+                      </span>
+                    </div>
+                    <div class='contain'>
+                      <span class='tagger'>{row.tag}</span>
+                      <span class='jobLocation'>{row.location}</span>
+                    </div>
+                    <div />
+                  </a>
+                </li>
+              </div>
+            );
+          })}
+        </ul>
+      </div>
     );
   }
 
   render() {
-    const { data, loading } = this.state;
+    const { posts, loading } = this.state;
 
     return (
       <div class='container-fluid'>
