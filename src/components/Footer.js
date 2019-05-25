@@ -5,8 +5,9 @@ import FooterForm from "./FooterForm"
 //and have it be an email capture form for an eventual mailing list
 
 var style = {
-    backgroundColor: "black",
-    borderTop: "1px solid #E7E7E7",
+    backgroundColor: "#F56358",
+    color: "#FFFFF0",
+    borderTop: "1px solid #BAF2E8",
     textAlign: "center",
     padding: "20px",
     position: "fixed",

@@ -1,6 +1,6 @@
 
 .holder {
-  background-image: linear-gradient(to bottom right, #19D6E0, #FF3526);
+  background-color: #F56358;
   margin: -1em -1em -1em
 }
 
@@ -9,17 +9,16 @@
   padding-left: 30px;
   padding-right: 30px;
   display: block;
-  font-family: helvetica;
+  font-family: "helvetica neue";
   font-style: sans-serif;
-  font-style: italic;
   font-size: 4em;
   font-weight: bolder;
-  color: black;
+  color: #FFFFF0;
   line-height: .8;
   letter-spacing: .01em;
   word-spacing: .1em;
   text-align: center;
-  text-shadow: 1.5px 1.5px #FFFFFF;
+  text-shadow: 1.5px 1.5px #218DA6;
 }
 
 .bottom {
@@ -28,11 +27,11 @@
   padding-left: 30px;
   padding-right: 30px;
   display: block;
-  font-family: helvetica;
+  font-family: "helvetica neue";
   font-style: sans-serif;
   font-size: .8em;
   font-weight: 600;
-  color: white;
+  color: #FFFFF0;
   text-align: center;
 }
 
@@ -46,7 +45,7 @@
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 75% }
+  to { width: 80% }
 }
 
 @keyframes blink-caret {

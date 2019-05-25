@@ -1,5 +1,5 @@
 import React from "react"
-import "./StickyTweet.css"
+import "./styles/StickyTweet.css"
 
 class TweetMe extends React.Component {
   render() {

@@ -6,11 +6,11 @@
     left: 0;
     top: 0;
     color: #000;
-    padding: .3em 1em;
+    padding: .2em .7em;
     border-bottom-right-radius: 8px;
     border: 1px solid #ebebeb;\background: linear-gradient(to left,#f85032,#ff4742);
     position: fixed;
-    background-color: white;
+    background-color: #FFFFF0;
     z-index: 1;
     font-size: 14px;
     opacity: .8;
@@ -30,7 +30,7 @@
 }
 
 #tweet:hover {
-  color: red;
+  color: #F56358;
   opacity: 1;
   transition: .5s;
 

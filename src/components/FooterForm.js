@@ -1,5 +1,5 @@
 import React from "react"
-import "./Footer.css"
+import "./styles/Footer.css"
 
 
 
@@ -7,7 +7,6 @@ class FooterForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = { data: { name: '', email: '' } };
-
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -15,7 +14,6 @@ class FooterForm extends React.Component {
   handleInputChange(event) {
     var updatedData = this.state.data;
     updatedData[event.target.name] = event.target.value
-
     this.setState({
       loading: false,
       data: updatedData
@@ -24,7 +22,6 @@ class FooterForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-
     fetch("https://sheetsu.com/apis/v1.0su/71dd9a045b9f", {
       headers: {
         'Accept': 'application/json',

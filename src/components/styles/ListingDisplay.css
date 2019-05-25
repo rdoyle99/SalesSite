@@ -1,0 +1,229 @@
+@media (max-width: 768px), (max-device-width: 640px), (max-device-width: 667px), (max-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1024px) and (min-device-width: 768px) .job-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 1em 1em;
+  margin-top: 1em;
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: 1
+}
+
+.job-list{
+  background-color: #FFFFF0;
+}
+
+.topper {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+  border-bottom: 1.1px solid #F56358;
+  margin-bottom: 10px;
+  max-height: 125px;
+  background-color: #FFFFF0;
+
+}
+
+.company-picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+
+.company-n-title {
+  margin-left: 5em;
+  font-family: 'helvetica neue', sans-serif;
+  vertical-align: middle;
+  display: block;
+  color: black;
+}
+
+.companyName {
+  margin-right: .5em;
+  margin: 5px auto;
+  line-height: 1;
+  font-weight: 700;
+  font-size: .9em;
+}
+
+.jobTitle {
+  font-weight: normal;
+  display: block;
+  font-size: .7em;
+  width: 25vw
+}
+
+.jobLocation {
+  max-width: 25ch;
+  font-family: "helvetica neue";
+  text-transform: uppercase;
+  font-style: italic;
+  border-radius: 5px;
+  font-size: .6em;
+  background: #FEB2AD;
+  color: black;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  display: block;
+  text-align: center;
+}
+
+.tagger {
+  max-width: 65ch;
+  font-family: "helvetica neue";
+  text-transform: uppercase;
+  font-style: italic;
+  border-radius: 5px;
+  font-size: .6em;
+  background: #FEB2AD;
+  color: black;
+  padding-right: 3px;
+  padding-left: 3px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  display: block;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.contain {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'helvetica neue';
+}
+
+.time {
+  text-align: right;
+  font-family: 'helvetica neue';
+  font-size: 12px;
+  color: #218DA6;
+}
+
+#apply-appear {
+  display: none;
+  font-size: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  position: absolute;
+  margin-left: 75%;
+  margin-top: 3%;
+  color: #F56358;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'helvetica neue';
+
+}
+
+#some-div:hover #apply-appear {
+  display: block;
+  transition: .8s;
+
+}
+
+#some-div {
+  text-decoration: none !important;
+}
+
+#hov:hover {
+  background-color: #BAF2E8;
+  transition: .8s;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+/*
+img { max-width: 100%; }
+html { font-size:100%; }
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.2rem;} }
+@media (min-width:1100px) { body {font-size:1.5rem;} }
+
+.txtone {
+    font-size: 2.5vw;
+    font-weight:300;
+    font-family: 'Open Sans', sans-serif;
+    top: 10%;
+    right: .5em;
+    text-align: center;
+
+}
+
+.txttwo {
+    font-size: 1.5vw;
+    font-family: 'Open Sans', sans-serif;
+    left: 2em;
+    text-align: left;
+}
+
+.txtthree {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.35vw;
+    text-align: center;
+    font-style: italic;
+    left: 1em;
+}
+
+.butty {
+    left: 5vw;
+    vertical-align: top;
+    top: -1.5vw;
+
+}
+
+ .DivStyle {
+   font-size: 20px;
+   width: 100%;
+   padding: 10px 100px;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-template-rows: 1fr;
+   justify-content: flex-start;
+ }
+
+ .additional {
+   transform: translateY(-2px);
+   transition: all 250ms ease-in-out;
+   will-change: transform;
+ }
+
+ .logo {
+    border-radius: .2em;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 3em;
+    max-width: 4em;
+    height: 3em;
+    max-height: 4em;
+    margin: 0;
+    margin-right: .2em;
+    display: inline-block;
+    vertical-align: top;
+ }
+
+ .containerRow {
+  display: grid;
+}
+
+.layer1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.layer2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+
+
+}
+
+.pad {
+  padding-right: 20px;
+}
+*/
