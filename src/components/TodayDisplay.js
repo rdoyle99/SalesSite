@@ -53,8 +53,8 @@ class TodayDisplay extends React.Component {
         <div class="filters">
           <span class='header'>Refine</span>
           <select value={this.state.filter} onChange={this.handleChange}>
-            <option value='Sales Development'>SDR</option>
-            <option value='Account Executive'>AE</option>
+            <option value='Sales Development'>Sales Development Roles</option>
+            <option value='Account Executive'>Account Exec / Closing Roles</option>
           </select>
           <br />
         </div>
