@@ -53,7 +53,6 @@ class TodayDisplay extends React.Component {
         <div class="filters">
           <span class='header'>Refine</span>
           <select value={this.state.filter} onChange={this.handleChange}>
-            <option value={this.resetState}>All</option>
             <option value='Sales Development'>SDR</option>
             <option value='Account Executive'>AE</option>
           </select>

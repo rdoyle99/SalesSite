@@ -1,13 +1,17 @@
 import React from 'react'
+import './styles/Footer.css';
 
 
-const LoadingSpinner = () => (
+class LoadingSpinner extends React.Component {
+  render() {
+    return (
 
-  <div>
-    <div class="spinner-grow text-success" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-)
+      <div>
+        <progress class="progress is-primary" value="50">15%</progress>
+      </div>
+
+    );
+  }
+}
 
 export default LoadingSpinner

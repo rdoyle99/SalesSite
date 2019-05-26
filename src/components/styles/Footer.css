@@ -76,6 +76,10 @@
   background-color: #000000;
 }
 
+.spinny {
+  margin: 50px 50px 50px 50px;
+}
+
 .column{
   flex-grow: inherit;
 }
@@ -93,4 +97,8 @@
 
 .row.columns.is-mobile.d-inline-flex {
     margin: 0 auto;
+}
+
+.progress {
+  transition: width 0.5s ease;
 }
