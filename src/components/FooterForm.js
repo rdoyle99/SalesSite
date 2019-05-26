@@ -45,14 +45,7 @@ class FooterForm extends React.Component {
             class="d-inline-flex columns is-mobile">
           <p
               class="note column"> Get a Daily Email <br />of SaaS Sales Jobs </p>
-          <input
-            class="input column d-inline-flex is-mobile"
-            type="text"
-            placeholder="Name"
-            name="form_name"
-            onChange={this.handleInputChange}
-            required
-          />
+
           <input
             class="input d-inline-flex column is-mobile"
             type="email"
@@ -65,7 +58,7 @@ class FooterForm extends React.Component {
             class="btnsizing button d-inline-flex column"
             type="submit"
             onClick={()=>{ alert('Thanks! Sending you great jobs :)');}}
-            >💸 Subscribe 💸
+            >Subscribe
           </button>
         </form>
       </div>
@@ -78,5 +71,15 @@ class FooterForm extends React.Component {
 
 
 export default FooterForm
+
+/*** <input
+  class="input column d-inline-flex is-mobile"
+  type="text"
+  placeholder="Name"
+  name="form_name"
+  onChange={this.handleInputChange}
+  required
+/>
+***/
 
 //https://script.google.com/macros/s/AKfycbwnkaNVb3IDHug7SIml_mn08pRp0oQO35nE5lF36r6OVX0DOTU/exec

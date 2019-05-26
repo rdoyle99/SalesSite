@@ -1,6 +1,6 @@
 import React from "react"
 import './styles/ListingDisplay.css'
-import LoadingSpinner from './LoadingSpinner'
+
 
 //1.20.2019. this is a function that pulls in props of data to the App from jobsData
 //it presents them in a table. I'd like to add a header for when dates change

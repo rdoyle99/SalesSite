@@ -1,38 +1,43 @@
 
 .holder {
-  background-color: #F56358;
+  background-color: #222222;
   margin: -1em -1em -1em
 }
 
 .top {
-  padding-top: 55px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: block;
-  font-family: "helvetica neue";
   font-style: sans-serif;
-  font-size: 4em;
+  font-size: 2.6em;
   font-weight: bolder;
-  color: #FFFFF0;
-  line-height: .8;
-  letter-spacing: .01em;
-  word-spacing: .1em;
+  color: #FFFFFF;
+  line-height: 1.3;
+  letter-spacing: .08em;
   text-align: center;
-  text-shadow: 1.5px 1.5px #218DA6;
 }
 
 .bottom {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
   display: block;
-  font-family: "helvetica neue";
   font-style: sans-serif;
   font-size: .8em;
   font-weight: 600;
-  color: #FFFFF0;
+  color: #a5b7bd;
   text-align: center;
+}
+
+select {
+  background-color: #ffffff;
+  margin-left: 10px;
+  font-size: .7em;
+  border: 1px solid #dddddd;
+  padding: 7px 14px;
+  min-width: 100px;
+  height: 28px;
 }
 
 .typewriter {
