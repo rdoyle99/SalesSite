@@ -18,7 +18,7 @@
 .input {
   height: 16px;
   width: 35px;
-  margin: 18px 10px 10px 10px;
+  margin: 20px 15px 10px -8px;
   vertical-align: center;
   position: sticky;
   font-size: .7em;
@@ -64,7 +64,8 @@
     position: sticky;
     margin: 4px;
     overflow-x: visible;
-    text-align: left;
+    text-align: center;
+    margin-left: inherit;
 }
 
 .phantom{
@@ -73,7 +74,7 @@
   height: 60px;
   width: 100%;
   position: sticky;
-  background-color: #000000;
+  background-color: #4a4a4a;
 }
 
 .spinny {
@@ -85,7 +86,7 @@
 }
 
 .sticky-footer {
-    background-color: #333333;
+    background-color: #212529;
     color: #FFFFFF;
     padding: 20px;
     position: fixed;
@@ -99,6 +100,14 @@
     margin: 0 auto;
 }
 
-.progress {
-  transition: width 0.5s ease;
+.prog {
+
+
+}
+
+.overLoad {
+  position: absolute;
+  font-family: "roboto";
+  left: 50px;
+  font-size: 1.5em
 }

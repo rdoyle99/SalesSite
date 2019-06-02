@@ -82,7 +82,7 @@ class TodayDisplay extends React.Component {
                         <span class='companyName'>{row.company}</span>
                         <div class="inline">
                           <div>
-                              <span class='jobTitle'>{row.title}&nbsp;&nbsp;•&nbsp;&nbsp;{row.location}</span>
+                              <span class='jobTitle'>{row.title}&nbsp;&nbsp;•&nbsp;&nbsp;{row.location}, {row.location2}</span>
                           </div>
                         </div>
                             <div class='contain'>

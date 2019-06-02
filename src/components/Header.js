@@ -10,7 +10,7 @@ class Header extends React.Component {
         TECH SALES WORK
       </span>
       <span class="bottom">
-        <div class="typewriter">
+        <div >
           The highest paying, highest rated, and most in-demand
         </div>
         jobs in Software Sales, updated daily
